@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.0/theme-classic/theme-classic.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<title>BMI Calculator</title>
+		<style>
+			.ui-page1 { 
+				position:fixed;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				background:url(background/bk1.jpg) 0 0  fixed !important;
+				background-size:100% 100%;
+				background-repeat:repeat;
+			}
+			.ui-page2 { 
+				position:fixed;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				background:url(background/bk2.jpg) 0 0  fixed !important;
+				background-size:100% 100%;
+				background-repeat:repeat;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- HOME -->
+			<div id="home" data-role="page" data-theme="d" class="ui-page1">
+			  <div data-role="header" data-position="fixed">
+				<h3>Pet platform</h3>
+			  </div>
+			  <div data-role="content" align="center">
+				<ul data-role="listview" data-inset="true">
+				  <li data-role="list-divider">Menu</li>
+				  <li>
+					<a href="#basicKL">
+					  <img src="img/basicKL.png" class="ui-li-icon">Basic knowledge</a>
+				  </li>
+				  <li>
+					<a href="#">
+					  <img src="img/hospital.png" class="ui-li-icon">Hospital</a>
+				  </li>
+				  <li>
+					<a href="#">
+					  <img src="img/restautant.png" class="ui-li-icon">Restaurant</a>
+				  </li>
+				  <li>
+					<a href="#">
+					  <img src="img/boarding.png" class="ui-li-icon">Boarding</a>
+				  </li>
+				  <li>
+					<a href="#">
+					  <img src="img/adoption.png" class="ui-li-icon">Adoption</a>
+				  </li>
+				  <li>
+					<a href="#">
+					  <img src="img/traffic.png" class="ui-li-icon">Traffic</a>
+				  </li>
+				  <li>
+					<a href="#">
+					  <img src="img/forum.png" class="ui-li-icon">Discussion</a>
+				  </li>
+				  <li>
+					<a href="#">
+					  <img src="img/picSH.png" class="ui-li-icon">Picture share</a>
+				  </li>
+				  <li>
+					<a href="#">
+					  <img src="img/about.png" class="ui-li-icon">About me</a>
+				  </li>
+				</ul>
+			  </div>
+			  <div data-role="footer" data-position="fixed">
+				
+			  </div>
+			</div>
+
+		<!-- Basic knowledge -->
+			<div id="basicKL" data-role="page" data-theme="d" class="ui-page2">
+			  <div data-role="header" data-position="fixed">
+				<h3>Basic knowledge</h3>
+				<a href="#home" data-role="button" data-icon="back" data-iconpos="notext" class="ui-btn-left">back</a>
+				<a href="#home" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right">home</a>
+			  </div>
+			  <div data-role="content" align="center">
+				<div class="ui-grid-b" style="height:100px">
+				  <div class="ui-block-a" style="height:100%">
+					<div is="icon" style="width:85px; height:90px; position:relative">
+					  <span class="ui-li-count" style="position:absolute; display:none; z-index:1; right:0; top:6px;"></span>
+					  <a href="#" class="ui-btn ui-mini ui-corner-all ui-shadow" style="display:block;margin:5px;height:50%;background-image: url(img/dog.png); background-size: 95% 80%; background-position: 50% 50%; background-repeat: no-repeat no-repeat;"></a>
+					  <div style="text-align:center;">Dog</div>
+					</div>
+				  </div>
+				  <div class="ui-block-b" style="height:100%">
+					<div is="icon" style="width:85px; height:90px; position:relative">
+					  <span class="ui-li-count" style="position:absolute; display:none; z-index:1; right:0; top:6px;"></span>
+					  <a href="#" class="ui-btn ui-mini ui-corner-all ui-shadow" style="display:block;margin:5px;height:50%;background-image: url(img/cat.png); background-size: 95% 80%; background-position: 50% 50%; background-repeat: no-repeat no-repeat;"></a>
+					  <div style="text-align:center;">Cat</div>
+					</div>
+				  </div>
+				  <div class="ui-block-c" style="height:100%">
+					<div is="icon" style="width:85px; height:90px; position:relative">
+					  <span class="ui-li-count" style="position:absolute; display:none; z-index:1; right:0; top:6px;"></span>
+					  <a href="#" class="ui-btn ui-mini ui-corner-all ui-shadow" style="display:block;margin:5px;height:50%;background-image: url(img/mouse.png); background-size: 95% 80%; background-position: 50% 50%; background-repeat: no-repeat no-repeat;"></a>
+					  <div style="text-align:center;">Mouse</div>
+					</div>
+				  </div>
+				</div>
+				<div class="ui-grid-b" style="height:100px">
+				  <div class="ui-block-a" style="height:100%">
+					<div is="icon" style="width:85px; height:90px; position:relative">
+					  <span class="ui-li-count" style="position:absolute; display:none; z-index:1; right:0; top:6px;"></span>
+					  <a href="#" class="ui-btn ui-mini ui-corner-all ui-shadow" style="display:block;margin:5px;height:50%;background-image: url(img/fish.png); background-size: 95% 80%; background-position: 50% 50%; background-repeat: no-repeat no-repeat;"></a>
+					  <div style="text-align:center;">Fish</div>
+					</div>
+				  </div>
+				  <div class="ui-block-b" style="height:100%">
+					<div is="icon" style="width:85px; height:90px; position:relative">
+					  <span class="ui-li-count" style="position:absolute; display:none; z-index:1; right:0; top:6px;"></span>
+					  <a href="#" class="ui-btn ui-mini ui-corner-all ui-shadow" style="display:block;margin:5px;height:50%;background-image: url(img/rabbit.png); background-size: 95% 80%; background-position: 50% 50%; background-repeat: no-repeat no-repeat;"></a>
+					  <div style="text-align:center;">Rabbit</div>
+					</div>
+				  </div>
+				  <div class="ui-block-c" style="height:100%">
+					<div is="icon" style="width:85px; height:90px; position:relative">
+					  <span class="ui-li-count" style="position:absolute; display:none; z-index:1; right:0; top:6px;"></span>
+					  <a href="#" class="ui-btn ui-mini ui-corner-all ui-shadow" style="display:block;margin:5px;height:50%;background-image: url(img/special.png); background-size: 95% 80%; background-position: 50% 50%; background-repeat: no-repeat no-repeat;"></a>
+					  <div style="text-align:center;">Special</div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div data-role="footer" data-position="fixed">
+				
+			  </div>
+			</div>
+	</body>
+</html>
